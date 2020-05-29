@@ -27,7 +27,7 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
+  background-color: var(--color-aditional);
 }
 h1,
 h2,
@@ -170,7 +170,7 @@ header {
 /* Внимание к деталям */
 /*  */
 .attention-section {
-  padding-right: 30px;
+  padding-right: 60px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -231,8 +231,9 @@ header {
 /*  Секция чем мы занимаемся*/
 /*  */
 .activity-section {
+  padding-right: 60px;
   padding-top: 94px;
-
+  padding-bottom: 94px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -241,8 +242,7 @@ header {
   text-transform: uppercase;
   color: var(--color-aditional);
 }
-.container.activity {
-}
+
 .activity-list {
   padding-left: 0;
   margin-top: 0;
@@ -271,8 +271,7 @@ header {
 /*  */
 .team {
   padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: var(--primary-bg-color);
 }
 
 .team-list {
@@ -290,6 +289,7 @@ header {
   margin-right: 0;
 }
 .team-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -298,6 +298,10 @@ header {
   margin-bottom: 50px;
 }
 .teamer {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -305,6 +309,9 @@ header {
   text-align: center;
 }
 .team-job {
+  margin-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -345,7 +352,6 @@ header {
 /*  */
 .customers {
   padding-top: 94px;
-  padding-bottom: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
