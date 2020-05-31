@@ -135,7 +135,8 @@ header {
 .auth-site:focus {
   color: var(--accent-color);
 }
-.hero {
+.hiro {
+  background-image: linear-gradient() rgba(47, 48, 58, 0.8);
   background-image: url(../image/hiropic.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -206,26 +207,15 @@ header {
   letter-spacing: 0.03em;
   font-weight: 400px;
 }
-.attention-item::before {
-  content: "";
-  outline: 1px solid grey;
-  display: block;
+.attention-svg {
+  width: 270px;
   height: 120px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ccc;
 }
-.antena::before {
-  background-image: url(../img2/vector1.png);
+.attention-svg:hover {
+  color: var(--accent-color);
 }
-.watch::before {
-  background-image: url(../img2/vector2.png);
-}
-.lap-top::before {
-  background-image: url(../img2/vector3.png);
-}
-.men::before {
-  background-image: url(../img2/vector4.png);
+button:hover {
+  color: var(--accent-color);
 }
 /*  */
 /*  Секция чем мы занимаемся*/
@@ -328,24 +318,13 @@ header {
   margin-right: 0;
   margin-right: 10px;
 }
-.team-link::after {
-  content: "";
 
-  display: inline-block;
-  height: 30px;
-  width: 20px;
+.icon-social {
+  width: 44px;
+  height: 44px;
 }
-.insta {
-  background-image: url(../img2/insta.png);
-}
-.twit {
-  background-image: url(../img2/twit.png);
-}
-.face {
-  background-image: url(../img2/face.png);
-}
-.linkedin {
-  background-image: url(../img2/link.png);
+.social-links a:hover {
+  color: var(--accent-color);
 }
 /*  */
 /*  Постоянные клиенты*/
@@ -454,6 +433,11 @@ footer {
 /*  */
 .container-footer {
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-kont {
   text-decoration-line: none;
@@ -465,12 +449,13 @@ footer {
 /*  */
 /*Присоеденяйтесь  */
 /*  */
-.jon {
+.jon-title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: u ppercase;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .social-links {
@@ -508,7 +493,20 @@ footer {
 .develop {
   font-size: 12px;
   line-height: 1.71;
+
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.buttonn {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  outline: 1px solid grey;
+  background: #e5e5e5;
+}
+.icon {
+  width: 170px;
+  height: 90px;
 }
