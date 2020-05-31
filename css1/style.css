@@ -171,7 +171,9 @@ header {
 /* Внимание к деталям */
 /*  */
 .attention-section {
-  padding-right: 60px;
+  padding-left: 10px;
+  padding-right: 20px;
+
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -330,6 +332,7 @@ button:hover {
 /*  Постоянные клиенты*/
 /*  */
 .customers {
+  padding-bottom: 94px;
   padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
@@ -343,8 +346,6 @@ button:hover {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  margin-top: 0;
 }
 .customers-list {
   padding-left: 0;
@@ -431,6 +432,9 @@ footer {
 /*  */
 /*  Футтер*/
 /*  */
+footer {
+  padding-top: 48px;
+}
 .container-footer {
   display: flex;
   width: 1200px;
@@ -490,10 +494,23 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.sent p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sent {
+  padding-top: 48px;
+  padding-bottom: 110px;
+  margin-left: 94px;
+}
+
 .develop {
   font-size: 12px;
   line-height: 1.71;
-
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
