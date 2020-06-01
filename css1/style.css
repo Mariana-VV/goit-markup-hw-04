@@ -316,6 +316,7 @@ button {
   margin-bottom: 50px;
 }
 .teamer {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   margin-top: 30px;
@@ -327,9 +328,10 @@ button {
   text-align: center;
 }
 .team-job {
+  padding-right: 30px;
   margin-bottom: 16px;
   margin-top: 0;
-  margin-bottom: 0;
+  
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -338,6 +340,8 @@ button {
 }
 .social-links {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-left: 0;
   margin-left: 32px;
   margin-right: 24px;
@@ -348,10 +352,13 @@ button {
 }
 
 .icon-social {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
 }
-
+.social-links a{
+width: 44px;
+height: 44px;
+}
 .social-links a:hover {
   color: var(--accent-color);
 }
@@ -494,6 +501,7 @@ footer {
 }
 .social-links li {
   margin-right: 10px;
+  
 }
 .social-link {
   content: "";
