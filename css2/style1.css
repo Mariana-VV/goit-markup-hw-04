@@ -144,7 +144,7 @@ color: #2196F3; */
 /*.main-list  */
 /*  */
 img {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .main-list {
   display: flex;

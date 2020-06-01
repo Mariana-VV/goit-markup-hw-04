@@ -102,7 +102,7 @@ header {
 }
 
 .auth-site-container {
-  margin-left: 331px;
+  margin-left: 305px;
   list-style: none;
 }
 .auth-site {
@@ -135,12 +135,29 @@ header {
 .auth-site:focus {
   color: var(--accent-color);
 }
+.item li{
+  display: flex;
+}
+  .envelop-icon{
+    width:16px ;
+    height:11.2px ;
+  }
+  .telefon-icon{
+    width:15px ;
+    height:10px ;
+  }
+  .auth-site li{
+    display: flex;
+  }
+  
+  /*  */
+  /* Герой */
+  /*  */
+}
 .hiro {
-  background-image: linear-gradient() rgba(47, 48, 58, 0.8);
-  background-image: url(../image/hiropic.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient (to right, rgba (47, 48, 58, 0.8),rgba (47, 48, 58, 0.8)),url(../image/hiropic.jpg);
+  background-image: 
+
   height: 600px;
   text-align: center;
 }
@@ -170,10 +187,16 @@ header {
 /*  */
 /* Внимание к деталям */
 /*  */
+.attention-svg:hover{
+  fill:var(--accent-color);
+  
+  }
+.baton:hover{
+outline: 1px solid gray;
+}
 .attention-section {
   padding-left: 10px;
   padding-right: 20px;
-
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -201,6 +224,7 @@ header {
   text-transform: uppercase;
 }
 .attention-text {
+  padding-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
   font-style: normal;
@@ -218,6 +242,8 @@ header {
 }
 button:hover {
   color: var(--accent-color);
+}
+button {
 }
 /*  */
 /*  Секция чем мы занимаемся*/
@@ -262,6 +288,7 @@ button:hover {
 /* Наша команда */
 /*  */
 .team {
+  padding-bottom: 94px;
   padding-top: 94px;
   background-color: var(--primary-bg-color);
 }
@@ -271,7 +298,6 @@ button:hover {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 94px;
 }
 .team-list li {
   width: 270px;
@@ -325,6 +351,7 @@ button:hover {
   width: 44px;
   height: 44px;
 }
+
 .social-links a:hover {
   color: var(--accent-color);
 }
