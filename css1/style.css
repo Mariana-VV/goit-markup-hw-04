@@ -37,6 +37,7 @@ h5 {
   color: var(--title-text-color);
 }
 header {
+  min-height: 80px;
   background: var(--color-aditional);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -102,7 +103,7 @@ header {
 }
 
 .auth-site-container {
-  margin-left: 305px;
+  margin-left: 300px;
   list-style: none;
 }
 .auth-site {
@@ -135,29 +136,30 @@ header {
 .auth-site:focus {
   color: var(--accent-color);
 }
-.item li{
+.item li {
   display: flex;
 }
-  .envelop-icon{
-    width:16px ;
-    height:11.2px ;
-  }
-  .telefon-icon{
-    width:15px ;
-    height:10px ;
-  }
-  .auth-site li{
-    display: flex;
-  }
-  
-  /*  */
-  /* Герой */
-  /*  */
+.envelop-icon {
+  width: 16px;
+  height: 11.2px;
 }
-.hiro {
-  background-image: linear-gradient (to right, rgba (47, 48, 58, 0.8),rgba (47, 48, 58, 0.8)),url(../image/hiropic.jpg);
-  background-image: 
+.tel-env {
+  margin-right: 10px;
+}
+.telefon-icon {
+  width: 15px;
+  height: 10px;
+}
+.auth-site li {
+  display: flex;
+}
 
+/*  */
+/* Герой */
+/*  */
+
+.hiro {
+  background-image: url(../image/hiropic.jpg);
   height: 600px;
   text-align: center;
 }
@@ -187,12 +189,11 @@ header {
 /*  */
 /* Внимание к деталям */
 /*  */
-.attention-svg:hover{
-  fill:var(--accent-color);
-  
-  }
-.baton:hover{
-outline: 1px solid gray;
+.attention-svg:hover {
+  fill: var(--accent-color);
+}
+.baton:hover {
+  outline: 1px solid gray;
 }
 .attention-section {
   padding-left: 10px;
@@ -234,6 +235,7 @@ outline: 1px solid gray;
   font-weight: 400px;
 }
 .attention-svg {
+  background: #f5f4fa;
   width: 270px;
   height: 120px;
 }
@@ -284,6 +286,9 @@ button {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+.activity-img {
+  display: block;
+}
 /*  */
 /* Наша команда */
 /*  */
@@ -331,7 +336,7 @@ button {
   padding-right: 30px;
   margin-bottom: 16px;
   margin-top: 0;
-  
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -355,12 +360,15 @@ button {
   width: 20px;
   height: 20px;
 }
-.social-links a{
-width: 44px;
-height: 44px;
+.social-links a {
+  width: 44px;
+  height: 44px;
 }
 .social-links a:hover {
   color: var(--accent-color);
+}
+.team-img {
+  display: block;
 }
 /*  */
 /*  Постоянные клиенты*/
@@ -375,6 +383,8 @@ height: 44px;
   letter-spacing: 0.03em;
 }
 .customers-title {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -393,6 +403,22 @@ height: 44px;
 }
 .customers-list li:last-child {
   margin-right: 0;
+}
+.buttonn {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  outline: 1px solid grey;
+  background: #e5e5e5;
+}
+.buttonn a {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.icon {
+  width: 44px;
+  height: 44px;
 }
 .blue {
   color: var(--accent-color);
@@ -501,7 +527,6 @@ footer {
 }
 .social-links li {
   margin-right: 10px;
-  
 }
 .social-link {
   content: "";
@@ -549,16 +574,4 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
-}
-
-.buttonn {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  outline: 1px solid grey;
-  background: #e5e5e5;
-}
-.icon {
-  width: 44px;
-  height: 44px;
 }
