@@ -68,6 +68,7 @@ header {
   padding-right: 15px;
   outline: 2px solid var(--accent-color);
 }
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -108,11 +109,8 @@ header {
   padding: 0;
   display: flex;
 }
-.auth-site li {
+.auth-site li:not(:last child) {
   margin-right: 30px;
-}
-.auth-site li:last-child {
-  margin-right: 0;
 }
 
 .auth-site.link {
@@ -139,9 +137,17 @@ header {
 .envelop-icon {
   width: 16px;
   height: 11.2px;
+  --color2: var(--primary-text-color);
 }
+.envelop-icon:hover {
+  --color2: var(--accent-color);
+}
+
 .tel-env {
   margin-right: 10px;
+}
+.tel-env:hover {
+  --color4: var(--accent-color);
 }
 .telefon-icon {
   width: 15px;
@@ -156,7 +162,8 @@ header {
 /*  */
 
 .hiro {
-  background-image: url(../image/hiropic.jpg);
+  background-image: url(../image/hiropic.jpg),
+    linear-gradient(rgba 47, 48, 58, 0.8);
   height: 600px;
   text-align: center;
 }
@@ -186,6 +193,9 @@ header {
 /*  */
 /* Внимание к деталям */
 /*  */
+.attention-svg.clock:hover {
+  overflow: 0;
+}
 .attention-svg:hover {
   fill: var(--accent-color);
 }
@@ -220,6 +230,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .attention-text {
   padding-right: 20px;
@@ -246,6 +257,15 @@ button:hover {
 /*  */
 /*  Секция чем мы занимаемся*/
 /*  */
+
+.activity-type {
+  display: inline-block;
+  width: 270px;
+
+  transform: translate(-50%, -50%);
+  outline: 1px solid grey;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .activity-section {
   padding-right: 60px;
   padding-top: 94px;
@@ -255,7 +275,7 @@ button:hover {
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+
   color: var(--color-aditional);
 }
 
@@ -284,12 +304,12 @@ button:hover {
 .activity-img {
   display: block;
 }
-.activity-div {
+/* .activity-div {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   outline: 1px solid grey;
-  display: block;
-}
+  display: flex;
+} */
 .activity {
   font-weight: 700px;
   font-size: 14px;
@@ -344,7 +364,6 @@ button:hover {
   text-align: center;
 }
 .team-job {
-  padding-right: 30px;
   margin-bottom: 16px;
   margin-top: 0;
 
@@ -380,6 +399,12 @@ button:hover {
 }
 .team-img {
   display: block;
+}
+.icon-social:hover {
+  --color1: var(--accent-color);
+}
+.social-links a:hover {
+  color: var(--accent-color);
 }
 /*  */
 /*  Постоянные клиенты*/
@@ -501,7 +526,6 @@ footer {
   padding-top: 48px;
 }
 .container-footer {
-  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -519,6 +543,8 @@ footer {
 /*Присоеденяйтесь  */
 /*  */
 .jon-title {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -552,6 +578,9 @@ footer {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.logo-adress {
+  margin-right: 69px;
+}
 .adress {
   font-style: normal;
   font-size: 14px;
@@ -560,7 +589,10 @@ footer {
   color: #ffffff;
 }
 .sent p {
-  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -568,21 +600,33 @@ footer {
   color: #ffffff;
 }
 .sent {
-  padding-top: 48px;
-  padding-bottom: 110px;
-  margin-left: 94px;
+  margin-right: auto;
+  margin-top: 100px;
 }
 
-.develop {
-  font-size: 12px;
-  line-height: 1.71;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
-}
 .jon-link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+.develop p {
+  display: inline-block;
+}
+.develop {
+  margin: 0;
+  padding: 0;
+  margin-right: 630px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+.jon {
+  display: inline-block;
+  margin-left: 514px;
+  margin-bottom: 200px;
 }
