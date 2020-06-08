@@ -162,12 +162,13 @@ header {
 /*  */
 
 .hiro {
-  background-image: url(../image/hiropic.jpg),
-    linear-gradient(rgba 47, 48, 58, 0.8);
+  background-image: url(../image/hiropic.jpg);
+
   height: 600px;
   text-align: center;
+  padding: 94px;
 }
-.container-hiro {
+.container.hero {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -193,20 +194,24 @@ header {
 /*  */
 /* Внимание к деталям */
 /*  */
-.attention-svg.clock:hover {
-  overflow: 0;
-}
+
 .attention-svg:hover {
   fill: var(--accent-color);
 }
-.baton:hover {
-  outline: 1px solid gray;
+.attention-svg:hover {
+  border-color: var(--accent-color);
 }
+/* .baton:hover {
+  outline: 1px solid gray; */
+
 .attention-section {
   padding-left: 10px;
   padding-right: 20px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.container.att {
+  background-color: #fff;
 }
 .attention-list li {
   width: 270px;
@@ -244,15 +249,27 @@ header {
 }
 .attention-svg {
   background: #f5f4fa;
-  width: 270px;
+  width: 265px;
   height: 120px;
 }
-.attention-svg:hover {
-  color: var(--accent-color);
+.attention-cont {
+  border: 3px solid grey;
 }
+.attention-cont:hover {
+  border-color: var(--accent-color);
+}
+/* .attention-svg:hover {
+  color: var(--accent-color);
+  outline: var(--accent-color);
+} */
+.attention-svg.clock:hover {
+  --color2: var(--accent-color);
+  --color3: var(--accent-color);
+}
+/* 
 button:hover {
   color: var(--accent-color);
-}
+} */
 
 /*  */
 /*  Секция чем мы занимаемся*/
@@ -444,8 +461,11 @@ button:hover {
   display: flex;
   width: 170px;
   height: 90px;
-  outline: 1px solid grey;
+  border: 2px solid grey;
   background: #e5e5e5;
+}
+.buttonn:hover {
+  border-color: var(--accent-color);
 }
 .buttonn a {
   align-items: center;
@@ -522,15 +542,19 @@ footer {
 /*  */
 /*  Футтер*/
 /*  */
-footer {
-  padding-top: 48px;
-}
-.container-footer {
+.container-foot {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
+  outline: 2px solid blue;
   margin-right: auto;
+  margin-left: auto;
+}
+footer {
 }
 .footer-kont {
   text-decoration-line: none;
@@ -545,6 +569,7 @@ footer {
 .jon-title {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -555,6 +580,8 @@ footer {
 }
 .social-links {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 .social-links li {
   margin-right: 10px;
@@ -578,9 +605,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.logo-adress {
-  margin-right: 69px;
-}
+
 .adress {
   font-style: normal;
   font-size: 14px;
@@ -588,20 +613,13 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.sent p {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
+.sent-cont p {
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-.sent {
-  margin-right: auto;
-  margin-top: 100px;
 }
 
 .jon-link {
@@ -610,23 +628,38 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.develop p {
-  display: inline-block;
-}
-.develop {
+
+/* .develop {
   margin: 0;
   padding: 0;
-  margin-right: 630px;
-
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
-}
-.jon {
+} */
+.logo-cont {
   display: inline-block;
-  margin-left: 514px;
-  margin-bottom: 200px;
+  width: 250px;
+  margin-right: 69px;
+  outline: 2px blue;
+}
+
+.jon-cont {
+  display: inline-block;
+  width: 250px;
+  margin-right: 94px;
+  outline: 2px blue;
+  vertical-align: bottom;
+  margin-bottom: 40px;
+}
+.sent-cont {
+  display: inline-block;
+  width: 250px;
+  outline: 2px blue;
+  vertical-align: bottom;
+  margin-bottom: 70px;
 }
