@@ -210,22 +210,63 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container.att {
-  background-color: #fff;
+.attention-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
-.attention-list li {
+.attention-item {
   width: 270px;
   margin-right: 30px;
+  outline: 1px solid grey;
 }
-.attention-list li:last-child {
+.attention-item:last-child {
   margin-right: 0;
 }
 
-.attention-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: flex;
+.attention-item:nth-child(1):before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  border: 2px solid grey;
+  border-radius: 1px solid grey;
+  background-image: url("../svg/antene.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.attention-item:nth-child(2):before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  border: 2px solid grey;
+  border-radius: 1px solid grey;
+  background-image: url("../svg/clock1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.attention-item:nth-child(3)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  border: 2px solid grey;
+  border-radius: 2px;
+  background-image: url(../svg/laptop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.attention-item:nth-child(4)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-image: url(../svg/men.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .attention-title {
   font-family: Roboto, sans-serif;
@@ -247,7 +288,7 @@ header {
   letter-spacing: 0.03em;
   font-weight: 400px;
 }
-.attention-svg {
+/* .attention-svg {
   background: #f5f4fa;
   width: 265px;
   height: 120px;
@@ -262,10 +303,11 @@ header {
   color: var(--accent-color);
   outline: var(--accent-color);
 } */
-.attention-svg.clock:hover {
+/* .attention-svg.clock:hover {
   --color2: var(--accent-color);
   --color3: var(--accent-color);
-}
+} */
+*/
 /* 
 button:hover {
   color: var(--accent-color);
