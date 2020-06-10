@@ -496,8 +496,10 @@ footer {
   color: #ffffff;
 }
 .develop {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.4);
-  align-self: flex-end;
+  text-align: center;
+  margin-left: 400px;
 }
 .adress-adress {
   color: #ffffff;
@@ -543,8 +545,6 @@ footer {
 /*  Футтер*/
 /*  */
 .container-foot {
-  display: inline-block;
-
   margin: 0;
   padding: 0;
   width: 1200px;
