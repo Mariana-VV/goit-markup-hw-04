@@ -543,12 +543,7 @@ footer {
 .studio-footer {
   color: #ffffff;
 }
-.develop {
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  margin-left: 400px;
-}
+
 .adress-adress {
   color: #ffffff;
 }
@@ -598,11 +593,14 @@ footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid blue;
+  outline: 2px solid darkblue;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-right: auto;
   margin-left: auto;
 }
 footer {
+  padding-top: 45px;
+  padding-bottom: 21px;
 }
 .footer-kont {
   text-decoration-line: none;
@@ -610,6 +608,7 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 /*  */
 /*Присоеденяйтесь  */
@@ -628,21 +627,16 @@ footer {
 }
 .social-links {
   display: flex;
+  text-align: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 .social-links li {
   margin-right: 10px;
 }
-.social-link {
-  content: "";
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-color: grey;
-  background-position: center;
-  border-radius: 50%;
+.social-links li:last-child {
+  margin-right: 0;
 }
 .logo-footer {
   font-family: Raleway;
@@ -661,6 +655,7 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .sent-cont p {
   font-weight: 700px;
   font-size: 14px;
@@ -668,6 +663,9 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 .jon-link {
@@ -677,18 +675,6 @@ footer {
   border-radius: 50%;
 }
 
-/* .develop {
-  margin: 0;
-  padding: 0;
-  margin-right: auto;
-  margin-left: auto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
-} */
 .logo-cont {
   display: inline-block;
   width: 250px;
@@ -710,4 +696,14 @@ footer {
   outline: 2px blue;
   vertical-align: bottom;
   margin-bottom: 70px;
+}
+.develop {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-left: 400px;
+}
+.line {
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
