@@ -507,10 +507,7 @@ button:hover {
   width: 50px;
   height: 50px;
 }
-.icon {
-  width: 44px;
-  height: 44px;
-}
+
 .blue {
   color: var(--accent-color);
 }
@@ -612,19 +609,34 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
 }
-.social-links {
+.social-link {
   display: flex;
   text-align: center;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.social-links li {
+.social-link .item:not(:last child) {
   margin-right: 10px;
 }
-.social-links li:last-child {
-  margin-right: 0;
+.social-link .link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-text-color);
+  border-radius: 50%;
 }
+.social-link .link:hover {
+  background: var(--accent-color);
+}
+.social-link .item:hover {
+  --color1: #fff;
+}
+svg {
+  overflow: visible;
+}
+/*  */
+/*  */
 .logo-footer {
   font-family: Raleway;
   font-style: normal;
@@ -655,12 +667,12 @@ footer {
   padding-bottom: 21px;
 }
 
-.jon-link {
+/* .jon-link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
+} */
 
 .logo-cont {
   display: inline-block;
