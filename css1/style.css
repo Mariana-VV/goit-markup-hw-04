@@ -38,14 +38,7 @@ header {
   background: var(--color-aditional);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* .container-header {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */
+
 .logo {
   text-decoration-line: none;
   color: var(--title-text-color);
@@ -438,8 +431,8 @@ button:hover {
 }
 
 .icon-social {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
 }
 
 .icon-social:hover {
@@ -616,10 +609,13 @@ footer {
   margin: 0;
   padding: 0;
 }
+
 .social-link .item:not(:last child) {
   margin-right: 10px;
 }
 .social-link .link {
+  padding-top: 15px;
+  text-align: center;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -633,6 +629,7 @@ footer {
   --color1: #fff;
 }
 svg {
+  text-align: center;
   overflow: visible;
 }
 /*  */
