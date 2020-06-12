@@ -194,8 +194,6 @@ header {
 .attention-svg:hover {
   border-color: var(--accent-color);
 }
-/* .baton:hover {
-  outline: 1px solid gray; */
 
 .attention-section {
   padding-left: 10px;
@@ -281,37 +279,10 @@ header {
   letter-spacing: 0.03em;
   font-weight: 400px;
 }
-/* .attention-svg {
-  background: #f5f4fa;
-  width: 265px;
-  height: 120px;
-}
-.attention-cont {
-  border: 3px solid grey;
-}
-.attention-cont:hover {
-  border-color: var(--accent-color);
-}
-/* .attention-svg:hover {
-  color: var(--accent-color);
-  outline: var(--accent-color);
-} */
-/* .attention-svg.clock:hover {
-  --color2: var(--accent-color);
-  --color3: var(--accent-color);
-} */
-*/
-/* 
-button:hover {
-  color: var(--accent-color);
-} */
-
 /*  */
-/*  Секция чем мы занимаемся*/
 /*  */
-
+/*  */
 .activity-section {
-  padding-top: 94px;
   padding-bottom: 94px;
   font-weight: 700;
   font-size: 14px;
@@ -480,12 +451,20 @@ button:hover {
 .customers-list .item {
   width: 170px;
   height: 90px;
+  text-align: center;
   border: 2px solid grey;
   background: #e5e5e5;
   margin-right: 30px;
 }
 .customers-list .item:last-child {
   margin-right: 0;
+}
+.customers-list .link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 .customers-list .icon {
   width: 40px;
@@ -496,6 +475,9 @@ button:hover {
 }
 .customers-list .item .client {
   --color2: #afb1b8;
+}
+.customers-list .item .client:hover {
+  --color2: var(--accent-color);
 }
 /*  */
 /*  */
