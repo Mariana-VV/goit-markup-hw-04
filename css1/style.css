@@ -341,10 +341,10 @@ header {
 
 .team-list {
   display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 30px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .team-list .item {
   width: 270px;
@@ -594,15 +594,19 @@ footer {
   background: var(--primary-text-color);
   border-radius: 50%;
 }
+.social-link .icon {
+  width: 20px;
+  height: 20px;
+}
 .social-link .link:hover {
   background: var(--accent-color);
 }
 .social-link .item:hover {
   --color1: #fff;
 }
-svg {
+/* svg {
   overflow: visible;
-}
+} */
 /*  */
 /*  */
 .logo-footer {
