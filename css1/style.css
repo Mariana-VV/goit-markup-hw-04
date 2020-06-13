@@ -107,10 +107,8 @@ header {
   margin: 0;
   padding: 0;
 }
-.auth-site .item {
-  margin-right: 30px;
-}
-.auth-site .item:not(:last child) {
+
+.auth-site .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -283,6 +281,7 @@ header {
 /*  */
 /*  */
 .activity-section {
+  padding-top: 94px;
   padding-bottom: 94px;
   font-weight: 700;
   font-size: 14px;
@@ -292,6 +291,8 @@ header {
   background-color: var(--color-aditional);
 }
 .activity-title {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -446,7 +447,6 @@ header {
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 94px;
 }
 .customers-list .item {
   width: 170px;
@@ -617,8 +617,11 @@ footer {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-decoration-line: none;
 }
-
+.blue {
+  color: var(--accent-color);
+}
 .adress {
   font-style: normal;
   font-size: 14px;
@@ -634,9 +637,6 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-
-  padding-top: 18px;
-  padding-bottom: 21px;
 }
 
 /* .jon-link {
@@ -666,15 +666,17 @@ footer {
   width: 250px;
   outline: 2px blue;
   vertical-align: bottom;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .develop {
-  display: inline-block;
+  margin: 0;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  margin-left: 400px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 .line {
+  display: inline-block;
   margin-top: 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
