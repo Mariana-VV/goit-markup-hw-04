@@ -153,8 +153,8 @@ header {
 /*  */
 
 .hiro {
-  background-image: url(../image/hiropic.jpg);
-
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8)),
+    url(../image/hiropic.jpg);
   height: 600px;
   text-align: center;
   padding: 94px;
