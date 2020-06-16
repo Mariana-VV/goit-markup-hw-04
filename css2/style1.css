@@ -198,6 +198,7 @@ img {
 .hiro-title {
   margin: 0;
   margin-bottom: 4px;
+  margin-left: 24px;
   font-weight: 700px;
   font-size: 18px;
   line-height: 2;
@@ -229,6 +230,8 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .portfolio-picture {
   position: relative;
@@ -262,7 +265,6 @@ img {
 footer {
   background: #2f303a;
   padding-top: 45px;
-  padding-bottom: 21px;
 }
 .container {
   width: 1200px;
@@ -301,6 +303,7 @@ footer {
   color: #ffffff;
 }
 .footer-kont {
+  margin: 0;
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -308,6 +311,7 @@ footer {
   letter-spacing: 0.03em;
 }
 .adress {
+  margin: 0;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -356,15 +360,6 @@ footer {
   text-decoration-line: none;
 }
 
-.develop {
-  font-size: 12px;
-  line-height: 1.71;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
-  align-self: flex-end;
-}
-
 .jon-title {
   font-style: normal;
   font-weight: 700;
@@ -402,4 +397,16 @@ footer {
   width: 20px;
   height: 20px;
   --color1: #fff;
+}
+.develop-cont {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 21px;
+}
+.develop {
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
 }
