@@ -153,11 +153,15 @@ header {
 /*  */
 
 .hiro {
-  background-image: linear-gradient rgba(47, 48, 58, 0.8),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
     url(../image/hiropic.jpg);
+
   height: 600px;
   text-align: center;
-  padding: 94px;
 }
 .container.hero {
   width: 1200px;
@@ -352,6 +356,9 @@ header {
   margin-right: 30px;
   background-color: #fff;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .item:last-child {
   margin-right: 0;
@@ -399,10 +406,6 @@ header {
 .socials-links .item:not(:last-child) {
   margin-right: 10px;
 }
-.socials-links .icon {
-  width: 20px;
-  height: 20px;
-}
 
 .socials-links .icon:hover {
   --color1: #fff;
@@ -415,6 +418,10 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.socials-links .icon {
+  width: 20px;
+  height: 20px;
 }
 
 .socials-links .link:hover {
@@ -449,6 +456,9 @@ header {
   padding: 0;
 }
 .customers-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   text-align: center;
@@ -461,7 +471,7 @@ header {
 }
 .customers-list .link {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
@@ -556,7 +566,6 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 /*  */
 /*Присоеденяйтесь  */
@@ -586,7 +595,7 @@ footer {
 }
 .social-link .link {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -622,6 +631,7 @@ footer {
   color: var(--accent-color);
 }
 .adress {
+  margin: 0;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -630,6 +640,7 @@ footer {
 }
 
 .sent-cont p {
+  margin: 0;
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
@@ -650,6 +661,7 @@ footer {
   width: 250px;
   margin-right: 69px;
   outline: 2px blue;
+  margin-bottom: 28px;
 }
 
 .jon-cont {
@@ -658,26 +670,22 @@ footer {
   margin-right: 94px;
   outline: 2px blue;
   vertical-align: bottom;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 .sent-cont {
   display: inline-block;
   width: 250px;
   outline: 2px blue;
   vertical-align: bottom;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
 .develop {
   margin: 0;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   padding-top: 18px;
-  padding-bottom: 21px;
 }
-.line {
-  margin-top: 28px;
-}
+
 .develop-cont {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 21px;
 }
