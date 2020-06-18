@@ -552,7 +552,7 @@ footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid darkblue;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-right: auto;
   margin-left: auto;
@@ -660,7 +660,7 @@ footer {
   display: inline-block;
   width: 250px;
   margin-right: 69px;
-  outline: 2px blue;
+
   margin-bottom: 28px;
 }
 
@@ -668,14 +668,14 @@ footer {
   display: inline-block;
   width: 250px;
   margin-right: 94px;
-  outline: 2px blue;
+
   vertical-align: bottom;
   margin-bottom: 56px;
 }
 .sent-cont {
   display: inline-block;
   width: 250px;
-  outline: 2px blue;
+
   vertical-align: bottom;
   margin-bottom: 120px;
 }
@@ -684,6 +684,7 @@ footer {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 .develop-cont {
