@@ -65,7 +65,7 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid var(--accent-color);
+
 }
 
 .main-nav {
@@ -188,7 +188,7 @@ header {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid var(--accent-color);
+
 }
 
 .hero-title {
