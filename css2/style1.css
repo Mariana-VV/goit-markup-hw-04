@@ -400,6 +400,13 @@ footer {
   color: #ffffff;
 }
 
+.white:hover {
+  color: var(--accent-color);
+}
+
+
+
+
 .footer-kont {
   margin: 0;
   text-decoration-line: none;
