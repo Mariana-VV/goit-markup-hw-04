@@ -82,7 +82,7 @@ header {
   display: flex;
 }
 
-.site-nav.link {
+.site-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration-line: none;
@@ -126,6 +126,9 @@ header {
 }
 
 .auth-site .link {
+  display: block;
+  width: 161px;
+  height: 16px;
   text-decoration-line: none;
   font-style: normal;
   font-weight: 500;
@@ -220,25 +223,19 @@ header {
 }
 
 .attention-section {
-  padding-left: 10px;
-  padding-right: 20px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .attention-list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .attention-item {
   width: 270px;
-  margin-right: 30px;
-}
-
-.attention-item:last-child {
-  margin-right: 0;
 }
 
 .attention-item:nth-child(1):before {
@@ -246,7 +243,6 @@ header {
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  border: 2px solid grey;
   border-radius: 1px solid grey;
   background-image: url("../svg/antene.svg");
   background-position: center;
@@ -258,7 +254,6 @@ header {
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  border: 2px solid grey;
   border-radius: 1px solid grey;
   background-image: url("../svg/clock1.svg");
   background-position: center;
@@ -270,7 +265,6 @@ header {
   content: "";
   height: 120px;
   background-color: #f5f4fa;
-  border: 2px solid grey;
   border-radius: 2px;
   background-image: url(../svg/laptop.svg);
   background-repeat: no-repeat;
@@ -281,7 +275,6 @@ header {
   display: block;
   content: "";
   height: 120px;
-  border: 2px solid grey;
   border-radius: 4px;
   background-color: #f5f4fa;
   background-image: url(../svg/men.svg);
@@ -530,6 +523,9 @@ header {
   height: 40px;
 }
 
+.customers-list .item:hover {
+  border: solid var(--accent-color);
+}
 .customers-list .icon:hover {
   --color1: var(--accent-color);
 }
@@ -556,6 +552,10 @@ footer {
 
 .studio-footer {
   color: #ffffff;
+}
+
+.studio-footer:hover {
+  color: var(--accent-color);
 }
 
 .adress-adress {

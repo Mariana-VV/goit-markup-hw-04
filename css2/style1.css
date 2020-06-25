@@ -132,6 +132,12 @@ color: #2196F3; */
 .auth-site-list .icon {
   width: 20px;
   height: 20px;
+  margin-right: 5px;
+}
+
+.auth-site-list .env {
+  width: 15px;
+  height: 20px;
 }
 
 .auth-site-list .icon {
