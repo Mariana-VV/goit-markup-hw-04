@@ -126,6 +126,8 @@ color: #2196F3; */
 
 .auth-site-list .link:hover,
 .auth-site-list .link:focus {
+
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -135,16 +137,17 @@ color: #2196F3; */
   margin-right: 5px;
 }
 
-.auth-site-list .env {
+/* .auth-site-list .env {
   width: 15px;
   height: 20px;
-}
+} */
 
 .auth-site-list .icon {
   --color2: var(--title-text-color);
 }
 
 .auth-site-list .icon:hover {
+
   --color2: var(--accent-color);
   --color4: var(--accent-color);
 }
