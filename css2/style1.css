@@ -53,6 +53,10 @@ h2 {
   letter-spacing: 0.06em;
 }
 
+svg {
+  overflow: visible;
+}
+
 header {
   background: #ffffff;
 }
@@ -78,9 +82,7 @@ a {
   text-decoration-line: none;
 }
 
-/* color: #757575;
-color: #212121;
-color: #2196F3; */
+
 .blue {
   color: #2196f3;
 }
@@ -132,25 +134,19 @@ color: #2196F3; */
 }
 
 .auth-site-list .icon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 15px;
   margin-right: 5px;
 }
 
-/* .auth-site-list .env {
+
+
+.auth-site-list .env {
   width: 15px;
   height: 20px;
-} */
-
-.auth-site-list .icon {
   --color2: var(--title-text-color);
 }
 
-.auth-site-list .icon:hover {
-
-  --color2: var(--accent-color);
-  --color4: var(--accent-color);
-}
 
 /*  */
 /* Site-nav */
