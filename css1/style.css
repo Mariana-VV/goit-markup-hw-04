@@ -169,17 +169,27 @@ header {
   --color4: var(--accent-color);
 }
 
+.auth-site .item:hover .envelop-icon,
+.auth-site .item:hover .link {
+  color: var(--accent-color);
+  --color2: var(--accent-color);
+}
+
+.auth-site .item:hover .telefon-icon,
+.auth-site .item:hover .link {
+  color: var(--accent-color);
+  --color4: var(--accent-color);
+}
+
 /*  */
 /*  */
 /* Герой */
 /*  */
 
 .hiro {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
+      rgba(47, 48, 58, 0.8)),
     url(../image/hiropic.jpg);
 
   height: 600px;
@@ -526,6 +536,7 @@ header {
 .customers-list .item:hover {
   border: solid var(--accent-color);
 }
+
 .customers-list .icon:hover {
   --color1: var(--accent-color);
 }
