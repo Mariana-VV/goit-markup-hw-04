@@ -116,6 +116,8 @@ a {
 
 .auth-site-list .link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration-line: none;
   font-style: normal;
   font-weight: 500;
@@ -136,17 +138,29 @@ a {
 .auth-site-list .icon {
   width: 10px;
   height: 15px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 
 
-.auth-site-list .env {
+.auth-site-list .icon-env {
   width: 15px;
   height: 20px;
   --color2: var(--title-text-color);
+  margin-right: 10px;
 }
 
+.auth-site-list .item:hover .icon-env,
+.auth-site-list .item:hover .link {
+  color: var(--accent-color);
+  --color2: var(--accent-color);
+}
+
+.auth-site-list .item:hover .icon,
+.auth-site-list .item:hover .link {
+  color: var(--accent-color);
+  --color4: var(--accent-color);
+}
 
 /*  */
 /* Site-nav */
