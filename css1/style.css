@@ -556,30 +556,7 @@ header {
 /*  */
 /*  */
 /*  */
-footer {
-  display: flex;
-  background: #2f303a;
-}
-
-.container.footer-kont {
-  display: flex;
-}
-
-.studio-footer {
-  color: #ffffff;
-}
-
-.studio-footer:hover {
-  color: var(--accent-color);
-}
-
-.adress-adress {
-  color: #ffffff;
-}
-
-.team-link {
-  text-decoration-line: none;
-}
+/*  */
 
 .buttom {
   min-width: 136px;
@@ -613,7 +590,6 @@ footer {
   text-decoration-line: none;
   background-color: var(--accent-color);
   color: var(--color-aditional);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -621,23 +597,36 @@ footer {
 /*  */
 /*  Футтер*/
 /*  */
-.container-foot {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-right: auto;
-  margin-left: auto;
-}
-
 footer {
+  background: #000;
   padding-top: 45px;
 }
 
-.footer-kont {
+.logo-block {
+  display: inline-block;
+  width: 250px;
+  margin-right: 69px;
+  margin-bottom: 28px;
+}
+
+.blue {
+  color: var(--accent-color);
+}
+
+.studio-footer {
+  color: #fff;
+}
+
+.footer-adress {
+  margin: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-email-tel {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -645,10 +634,15 @@ footer {
   letter-spacing: 0.03em;
 }
 
-/*  */
-/*Присоеденяйтесь  */
-/*  */
-.jon-title {
+.join-block {
+  display: inline-block;
+  width: 250px;
+  margin-right: 94px;
+  vertical-align: bottom;
+  margin-bottom: 56px;
+}
+
+.join-title {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -660,6 +654,15 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+
+
+
+
+/*  */
+/*Присоеденяйтесь  */
+/*  */
+
 
 .social-link {
   display: flex;
@@ -696,11 +699,7 @@ footer {
   --color1: #fff;
 }
 
-/* svg {
-  overflow: visible;
-} */
-/*  */
-/*  */
+
 .logo-footer {
   font-family: Raleway;
   font-style: normal;
@@ -712,60 +711,37 @@ footer {
   text-decoration-line: none;
 }
 
-.blue {
-  color: var(--accent-color);
+
+
+
+
+
+
+.sent-block {
+  display: inline-block;
+  width: 250px;
+  vertical-align: bottom;
+  margin-bottom: 120px;
 }
 
-.adress {
-  margin: 0;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.sent-cont p {
+.sent-block p {
   margin: 0;
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 
-.logo-cont {
-  display: inline-block;
-  width: 250px;
-  margin-right: 69px;
-  margin-bottom: 28px;
+.develop-block {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.jon-cont {
-  display: inline-block;
-  width: 250px;
-  margin-right: 94px;
-  vertical-align: bottom;
-  margin-bottom: 56px;
-}
-
-.sent-cont {
-  display: inline-block;
-  width: 250px;
-
-  vertical-align: bottom;
-  margin-bottom: 120px;
-}
-
-.develop {
+.develop-text {
   margin: 0;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   padding-top: 18px;
   padding-bottom: 21px;
-}
-
-.develop-cont {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
